@@ -19,7 +19,7 @@ function App() {
       </Header>
       <Main>
         <HomeSection>
-          <h1>Welcome to my portfolio</h1>
+          <h1>Front-End React Developer</h1>
         </HomeSection>
       </Main>
       <Footer></Footer>

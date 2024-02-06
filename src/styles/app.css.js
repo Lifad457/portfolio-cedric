@@ -3,17 +3,19 @@ import styled from "styled-components";
 export const Header = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 3rem;
     align-items: center;
     background-color: var(--color-white);
+    position: fixed;
+    min-width: 100%;
 `
 export const Logo = styled.div`
-    font-size: 1.7rem;
+    font-size: var(--fs-medium);
     font-weight: var(--fw-bold);
 `
 export const Nav = styled.div`
     display: flex;
-    font-size: 1.2rem;
+    font-size: var(--fs-regular);
     font-weight: var(--fw-medium);
 
     ul {
@@ -24,15 +26,21 @@ export const Nav = styled.div`
 
 `
 export const Main = styled.div`
-    
-    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
 `
 export const HomeSection = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     min-height: 100vh;
     min-height: 100dvh;
-    max-width: 70rem;
+    min-width: 100%;
     margin: 0 auto;
-    padding: 0 4rem;
-    background-color: red;
+    font-size: var(--fs-large);
+
 `
 export const Footer = styled.div``
