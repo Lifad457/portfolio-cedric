@@ -23,24 +23,39 @@ export const Nav = styled.div`
         list-style: none;
         gap: 1.5rem;
     }
-
 `
 export const Main = styled.div`
     display: flex;
     flex-direction: column;
-    position: relative;
     z-index: -1;
 `
 export const HomeSection = styled.section`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 7rem 3rem;
     min-height: 100vh;
     min-height: 100dvh;
-    min-width: 100%;
-    margin: 0 auto;
-    font-size: var(--fs-large);
 
+    h1 {
+        font-size: var(--fs-extra-large);
+        line-height: 1.2;
+        padding-block: 3rem;
+        max-width: 800px;
+    }
+
+    h3 {
+        font-size: var(--fs-regular);
+        font-weight: var(--fw-medium);
+        max-width: 700px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 1000vh;
+        padding: 3rem;
+    }
 `
 export const Footer = styled.div``

@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     &:root {
         --color-primary: #f9f9f9;
         --color-secondary: #FFD700;
-        --color-tertiary: #FFD700;
+        --color-tertiary: #ac257f;
         --color-black: #000;
         --color-white: #fff;
 
@@ -37,6 +37,8 @@ export const GlobalStyle = createGlobalStyle`
         grid-template-rows: auto 1fr auto;
 
         font-family: var(--font-primary);
+        line-height: 1.6;
+
         background-color: var(--color-primary);
     }
 
