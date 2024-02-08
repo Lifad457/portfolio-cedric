@@ -8,11 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     &:root {
-        --color-primary: #f9f9f9;
-        --color-secondary: #FFD700;
-        --color-tertiary: #ac257f;
-        --color-black: #000;
-        --color-white: #fff;
+        --color-primary: ${props => props.theme === "light" ? "#fff" : "#000"};
+        --color-secondary: ${props => props.theme === "light" ? "#000" : "#fff"};
+        --color-tertiary: #f9f9f9;
 
         --font-primary: 'Poppins', sans-serif;
         --fw-light: 300;
@@ -39,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: var(--font-primary);
         line-height: 1.6;
 
-        background-color: var(--color-primary);
+        background-color: var(--color-tertiary);
     }
 
 `
