@@ -1,4 +1,5 @@
 import { Header, Logo, Nav, Switch, ThemeToggler } from "../styles/header.css"
+import { Moon, Sun } from "../styles/icons.css";
 
 export default function HeaderComponent({ theme, setTheme }) {
     function toggleTheme() {
@@ -17,6 +18,8 @@ export default function HeaderComponent({ theme, setTheme }) {
                 </ul>
             </Nav>
             <ThemeToggler onClick={() => toggleTheme()}>
+                    <Sun />  
+                    <Moon />
                 <Switch theme={theme} />
             </ThemeToggler>
         </Header>

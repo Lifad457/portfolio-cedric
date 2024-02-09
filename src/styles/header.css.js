@@ -29,20 +29,29 @@ export const Nav = styled.div`
 `
 export const ThemeToggler = styled.div`
     display: flex;
+    flex-direction: row;
     position: relative;
     cursor: pointer;
     width: 3.5rem;
-    height: 1.8rem;
+    height: 1.2rem;
     border-radius: 1000rem;
-    background-color: lime;
+    box-shadow: 
+        -4px -2px 3px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
+        -4px 2px 80px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
+        -2px -0.5px 5px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-secondary"}),
+        inset 0 0 4px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"});
 `
 export const Switch = styled.div`
+    display: flex;
     position: absolute;
-    width: 1.8rem;
-    height: 1.8rem;
+    top: -5.5px;
+    left: -6px;
+    width: 1.7rem;
+    height: 1.7rem;
     border-radius: 50%;
-    background-color: ${props => props.theme === "light" ? "#000" : "#fff"};
     transition: transform .3s ease-out;
     transform: translateX(0);
     transform: ${props => props.theme === "light" ? "translateX(0)" : "translateX(2.1rem)"};
+    color: var(--color-secondary);
+    box-shadow: inset 0 1px 4px 0 var(--color-secondary);
 `
