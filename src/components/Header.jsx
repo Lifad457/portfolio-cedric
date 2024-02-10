@@ -17,9 +17,9 @@ export default function HeaderComponent({ theme, setTheme }) {
                 <li>Contact</li>
                 </ul>
             </Nav>
-            <ThemeToggler onClick={() => toggleTheme()}>
-                    <Sun />  
-                    <Moon />
+            <ThemeToggler onClick={() => toggleTheme()} theme={theme}>
+                <Sun />  
+                <Moon />
                 <Switch theme={theme} />
             </ThemeToggler>
         </Header>

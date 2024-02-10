@@ -21,8 +21,10 @@ export const LinkedIn = styled(SiLinkedin)`
     }
 `
 export const Moon = styled(GoMoon)`
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    margin: 0 0.2rem;
 `
 export const Sun = styled(GoSun)`
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    margin: 0 0.2rem;
 `

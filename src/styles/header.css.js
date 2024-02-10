@@ -29,29 +29,32 @@ export const Nav = styled.div`
 `
 export const ThemeToggler = styled.div`
     display: flex;
-    flex-direction: row;
     position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
     cursor: pointer;
-    width: 3.5rem;
-    height: 1.2rem;
+    width: 4.2rem;
+    height: 2rem;
     border-radius: 1000rem;
+    border: ${props => props.theme === "light" ? "2px solid rgba(0, 0, 0, 0.2)" : "2px solid rgba(255, 255, 255, 0.2)"};
     box-shadow: 
-        -4px -2px 3px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
-        -4px 2px 80px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
-        -2px -0.5px 5px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-secondary"}),
-        inset 0 0 4px 6px var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"});
+        inset 0 0 4px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"}),
+        inset 0 0 4px 0 var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
+        0 -0 3px 0 var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
+        0 -0 3px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"});
 `
 export const Switch = styled.div`
     display: flex;
     position: absolute;
-    top: -5.5px;
-    left: -6px;
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     transition: transform .3s ease-out;
     transform: translateX(0);
-    transform: ${props => props.theme === "light" ? "translateX(0)" : "translateX(2.1rem)"};
-    color: var(--color-secondary);
-    box-shadow: inset 0 1px 4px 0 var(--color-secondary);
+    transform: ${props => props.theme === "light" ? "translateX(0)" : "translateX(2rem)"};
+    box-shadow:
+        0 0 3px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"}),
+        inset 0 0 2px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"}),
+        inset 0 0 2px 0 var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"});
 `
