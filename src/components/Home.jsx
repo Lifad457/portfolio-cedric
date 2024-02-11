@@ -1,5 +1,5 @@
-import { Home, HomeSection, HeroImage, HomeDescription, Socials } from "../styles/home.css"
-import { GitHub, LinkedIn } from "../styles/icons.css"
+import { Home, HomeSection, HeroImage, HomeDescription } from "../styles/home.css"
+import { GitHub, LinkedIn, Socials } from "../styles/icons.css"
 import photo from "../assets/images/photo.jpg"
 
 export default function HomeComponent() {

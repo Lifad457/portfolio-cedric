@@ -60,8 +60,8 @@ export const Label = styled.label`
 		width: 1.6rem;
 		height: 1.6rem;
         position: absolute;
-		background: linear-gradient(180deg, #ffcc89, #d8860b);
 		border-radius: 50%;
+        background: linear-gradient(180deg, #777, #969696);
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 		transition: 0.3s;
 	}
@@ -69,7 +69,7 @@ export const Label = styled.label`
         position: absolute;
         width: 1.5rem;
         top: 0.2rem;
-        left: 0;
+        left: 0.05rem;
         z-index: 100;
         &.sun {
             fill: var(--color-white);
