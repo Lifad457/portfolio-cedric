@@ -8,9 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     &:root {
-        --color-primary: ${props => props.theme === "light" ? "#fff" : "#000"};
-        --color-secondary: ${props => props.theme === "light" ? "#000" : "#fff"};
-        --color-tertiary: #f9f9f9;
+        --color-primary: ${props => props.theme === "light" ? "#fafafa" : "#3a3a3a"};
+        --color-secondary: ${props => props.theme === "light" ? "#f0f0f0" : "#303030"};
+        --color-tertiary: #7e7e7e;
+        --color-black: #000;
+        --color-white: #fff;
+        --color-font: ${props => props.theme === "light" ? "var(--color-black)" : "var(--color-white)"};
 
         --font-primary: 'Poppins', sans-serif;
         --fw-light: 300;
@@ -37,7 +40,8 @@ export const GlobalStyle = createGlobalStyle`
         font-family: var(--font-primary);
         line-height: 1.6;
 
-        background-color: var(--color-tertiary);
+        color: var(--color-font);
+        background-color: var(--color-primary);
     }
 
 `

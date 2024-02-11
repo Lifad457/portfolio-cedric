@@ -5,8 +5,7 @@ export const Header = styled.div`
     justify-content: space-between;
     padding: 1.5rem 3rem;
     align-items: center;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-secondary);
     position: fixed;
     min-width: 100%;
 `
@@ -27,34 +26,59 @@ export const Nav = styled.div`
         gap: 1.5rem;
     }
 `
-export const ThemeToggler = styled.div`
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2rem;
-    cursor: pointer;
-    width: 4.2rem;
-    height: 2rem;
-    border-radius: 1000rem;
-    border: ${props => props.theme === "light" ? "2px solid rgba(0, 0, 0, 0.2)" : "2px solid rgba(255, 255, 255, 0.2)"};
-    box-shadow: 
-        inset 0 0 4px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"}),
-        inset 0 0 4px 0 var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
-        0 -0 3px 0 var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"}),
-        0 -0 3px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"});
+export const Input = styled.input`
+    display: none;
+	&:checked + label {
+		&:after {
+			left: 0;
+			transform: translateX(calc(100% + .3rem));
+			background: linear-gradient(180deg, #777, #3a3a3a);
+		}
+		svg {
+			&.sun {
+				fill: var(--color-tertiary);
+			}
+			&.moon {
+				fill: var(--color-white);
+			}
+		}
+	}
 `
-export const Switch = styled.div`
-    display: flex;
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    transition: transform .3s ease-out;
-    transform: translateX(0);
-    transform: ${props => props.theme === "light" ? "translateX(0)" : "translateX(2rem)"};
-    box-shadow:
-        0 0 3px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"}),
-        inset 0 0 2px 0 var(${props => props.theme === "light" ? "--color-primary" : "--color-secondary"}),
-        inset 0 0 2px 0 var(${props => props.theme === "light" ? "--color-secondary" : "--color-primary"});
+export const Label = styled.label`
+	display: block;
+	position: relative;
+    width: 3.5rem;
+	height: 1.6rem;
+	border-radius: 1000rem;
+	background: var(--color-white);
+	box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+		inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: 0.3s;
+	&:after {
+		content: "";
+		width: 1.6rem;
+		height: 1.6rem;
+        position: absolute;
+		background: linear-gradient(180deg, #ffcc89, #d8860b);
+		border-radius: 50%;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+	}
+    svg {
+        position: absolute;
+        width: 1.5rem;
+        top: 0.2rem;
+        left: 0;
+        z-index: 100;
+        &.sun {
+            fill: var(--color-white);
+            transition: 0.3s;
+        }
+        &.moon {
+            left: 1.95rem;
+            fill: var(--color-tertiary);
+            transition: 0.3s;
+        }
+    }
 `

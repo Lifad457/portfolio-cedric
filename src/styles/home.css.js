@@ -16,8 +16,6 @@ export const HomeSection = styled.section`
 
 `
 export const HomeDescription = styled.div`
-    color: var(--color-secondary);
-    
     h1 {
         font-size: var(--fs-extra-large);
         line-height: 1.2;
@@ -37,7 +35,7 @@ export const Socials = styled.div`
     padding: 3rem 0;
 `
 export const HeroImage = styled.img`
-    max-width: 500px;
     display: block;
+    max-width: 500px;
     padding: 3rem;
 `

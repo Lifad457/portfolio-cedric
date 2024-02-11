@@ -1,11 +1,8 @@
-import { Header, Logo, Nav, Switch, ThemeToggler } from "../styles/header.css"
+import { Header, Logo, Nav, Input, Label } from "../styles/header.css"
 import { Moon, Sun } from "../styles/icons.css";
 
 export default function HeaderComponent({ theme, setTheme }) {
-    function toggleTheme() {
-        setTheme(theme === "light" ? "dark" : "light");
-    }
-
+ 
     return (
         <Header>
             <Logo>Bison Cédric</Logo>
@@ -17,11 +14,11 @@ export default function HeaderComponent({ theme, setTheme }) {
                 <li>Contact</li>
                 </ul>
             </Nav>
-            <ThemeToggler onClick={() => toggleTheme()} theme={theme}>
-                <Sun />  
-                <Moon />
-                <Switch theme={theme} />
-            </ThemeToggler>
+            <Input type="checkbox" id="darkmode-toggle" />
+            <Label htmlFor="darkmode-toggle" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+                <Sun className="sun" />
+                <Moon className="moon" />
+            </Label>
         </Header>
     )
 }
