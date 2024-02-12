@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     &:root {
         --color-primary: ${props => props.theme === "light" ? "#f8f8f8" : "#3a3a3a"};
         --color-secondary: ${props => props.theme === "light" ? "#f0f0f0" : "#303030"};
+        --color-tertiary: #FFE600;
         --color-black: #000;
         --color-white: #fff;
         --color-font: ${props => props.theme === "light" ? "var(--color-black)" : "var(--color-white)"};

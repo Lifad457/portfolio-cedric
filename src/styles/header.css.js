@@ -36,7 +36,7 @@ export const Input = styled.input`
 		}
 		svg {
 			&.sun {
-				fill: var(--color-tertiary);
+				fill: var(--color-black);
 			}
 			&.moon {
 				fill: var(--color-white);
@@ -77,7 +77,7 @@ export const Label = styled.label`
         }
         &.moon {
             left: 1.95rem;
-            fill: var(--color-tertiary);
+            fill: var(--color-black);
             transition: 0.3s;
         }
     }

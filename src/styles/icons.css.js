@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { GoSun, GoMoon  } from "react-icons/go";
+import { MdMobileFriendly, MdMailOutline  } from "react-icons/md";
 
 export const Socials = styled.div`
     display: flex;
@@ -24,6 +25,12 @@ export const LinkedIn = styled(SiLinkedin)`
         cursor: pointer;
         transform: scale(1.3);
     }
+`
+export const Phone = styled(MdMobileFriendly)`
+    font-size: var(--fs-large);
+`
+export const Email = styled(MdMailOutline)`
+    font-size: var(--fs-large);
 `
 export const Moon = styled(GoMoon)`
     font-size: 1.15rem;

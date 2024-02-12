@@ -19,8 +19,18 @@ export const HomeDescription = styled.div`
         font-size: var(--fs-extra-large);
         line-height: 1.2;
         padding-block: 3rem;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            min-width: 22rem;
+            min-height: 2rem;
+            background-color: var(--color-tertiary);
+            top: 5rem;
+            left: 1rem;
+            z-index: -1;
+        }
     }
-
     h3 {
         font-size: var(--fs-regular);
         font-weight: var(--fw-medium);
