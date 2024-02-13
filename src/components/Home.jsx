@@ -7,7 +7,9 @@ export default function HomeComponent() {
     <Home>
       <HomeSection>
         <HomeDescription>
-          <h1>Front-End React Developer</h1>
+          <h1>Front-End </h1>
+          <h1>React</h1>
+          <h1>Developer</h1>
           <h3>Hi, I&apos;m Cédric, a front-end developer based in Vert le Petit, Essonnes (France).
              <br/>I specialize in building websites and applications using modern technologies like React.
           </h3>

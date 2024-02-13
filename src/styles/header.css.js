@@ -8,6 +8,7 @@ export const Header = styled.div`
     background-color: var(--color-secondary);
     position: fixed;
     min-width: 100%;
+    z-index: 999;
 `
 export const Logo = styled.div`
     font-size: var(--fs-medium);

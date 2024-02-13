@@ -9,8 +9,23 @@ export const Contact = styled.div`
     font-size: var(--fs-regular);
 
     h1 {
+        display: inline-block;
+        position: relative;
         font-size: var(--fs-large);
-        padding-block: 2rem;
+        margin: 2rem 0 4rem;
+        z-index: 1;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 55%;
+            left: 3%;
+            height: 50%;
+            width: 100%;
+            background-color: var(--color-tertiary);
+            transform: skew(-10deg);
+            z-index: -1;
+        }
     }
 `
 export const ContactSection = styled.section`
