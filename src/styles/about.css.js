@@ -30,8 +30,17 @@ export const AboutSection = styled.section`
         }
     }
     
-    h3 {
+    p {
         font-size: var(--fs-regular);
         font-weight: var(--fw-medium);
+    }
+
+    h2 {
+        font-size: var(--fs-medium);
+        font-weight: var(--fw-medium);
+        text-decoration: underline;
+        text-decoration-color: var(--color-tertiary);
+        text-decoration-thickness: 0.2rem;
+        text-underline-offset: 0.4rem;
     }
 `

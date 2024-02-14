@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { GoSun, GoMoon  } from "react-icons/go";
 import { MdMobileFriendly, MdMailOutline  } from "react-icons/md";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaFigma } from "react-icons/fa6";
-import { SiJavascript, SiFirebase, SiMysql, SiMicrosoftsqlserver, SiAffinity } from "react-icons/si";
+import { SiJavascript, SiFirebase, SiMysql, SiMicrosoftsqlserver, SiAffinity, SiCsharp } from "react-icons/si";
 
 // Socials
 export const Socials = styled.div`
@@ -31,35 +31,49 @@ export const LinkedIn = styled(SiLinkedin)`
 `
 
 // Skills
-export const HTMLIcon = styled(FaHtml5)`
-    font-size: var(--fs-large);
+const skill = css`
+    font-size: 7rem;
+    border-radius: 15%;
+    padding: .6rem;
+    background-color: var(--color-tertiary);
 `
+export const HTMLIcon = styled(FaHtml5)`
+    ${skill}
+`;
 export const CSSIcon = styled(FaCss3Alt)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const JavaScriptIcon = styled(SiJavascript)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const ReactIcon = styled(FaReact)`
-    font-size: var(--fs-large);
+    ${skill}
+`
+export const CSharpIcon = styled(SiCsharp)`
+    ${skill}
 `
 export const NodeIcon = styled(FaNodeJs)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const FirebaseIcon = styled(SiFirebase)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const MySQLIcon = styled(SiMysql)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const MSSQLIcon = styled(SiMicrosoftsqlserver)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const FigmaIcon = styled(FaFigma)`
-    font-size: var(--fs-large);
+    ${skill}
 `
 export const AffinityIcon = styled(SiAffinity)`
-    font-size: var(--fs-large);
+    ${skill}
+`
+export const IconsContainer = styled.div`
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
 `
 
 // Contact
