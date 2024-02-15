@@ -4,7 +4,7 @@ import photo from "../assets/images/photo.jpg"
 
 export default function HomeComponent() {
   return (
-    <Home>
+    <Home id="home">
       <HomeSection>
         <HomeDescription>
           <h1>Front-End </h1>

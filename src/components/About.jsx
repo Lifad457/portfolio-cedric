@@ -1,9 +1,9 @@
 import { About, AboutSection } from "../styles/about.css";
-import { AffinityIcon, CSSIcon, CSharpIcon, FigmaIcon, FirebaseIcon, HTMLIcon, IconsContainer, JavaScriptIcon, MSSQLIcon, MySQLIcon, NodeIcon, ReactIcon } from "../styles/icons.css";
+import { AffinityIcon, CSSIcon, CSharpIcon, FigmaIcon, FirebaseIcon, HTMLIcon, IconWrapper, IconsContainer, JavaScriptIcon, MSSQLIcon, MySQLIcon, NodeIcon, ReactIcon } from "../styles/icons.css";
 
 export default function AboutComponent() {
   return (
-    <About>
+    <About id="about">
       <AboutSection>
         <h1>About me</h1>
         <p>
@@ -51,26 +51,59 @@ export default function AboutComponent() {
         <h1>Skills</h1>
         <h2>Front-End</h2>
         <IconsContainer>
-          <HTMLIcon />
-          <CSSIcon />
-          <JavaScriptIcon />
-          <ReactIcon />
+          <IconWrapper>
+            <HTMLIcon />
+            HTML
+          </IconWrapper>
+          <IconWrapper>
+            <CSSIcon />
+            CSS
+          </IconWrapper>
+          <IconWrapper>
+            <JavaScriptIcon />
+            JavaScript
+          </IconWrapper>
+          <IconWrapper>
+            <ReactIcon />
+            React
+          </IconWrapper>
         </IconsContainer>
         <h2>Back-End</h2>
         <IconsContainer>
-          <CSharpIcon />
-          <NodeIcon />
-          <FirebaseIcon />
+          <IconWrapper>
+            <CSharpIcon />
+            C#
+          </IconWrapper>
+          <IconWrapper>
+            <NodeIcon />
+            Node.js
+          </IconWrapper>
+          <IconWrapper>
+            <FirebaseIcon />
+            Firebase
+          </IconWrapper>          
         </IconsContainer>
         <h2>Database Management</h2>
         <IconsContainer>
-          <MySQLIcon />
-          <MSSQLIcon />
+          <IconWrapper>
+            <MySQLIcon />
+            MySQL
+          </IconWrapper>
+          <IconWrapper>
+            <MSSQLIcon />
+            MSSQL
+          </IconWrapper>
         </IconsContainer>
         <h2>UI/UX Tools</h2>
         <IconsContainer>
-          <FigmaIcon />
-          <AffinityIcon />
+          <IconWrapper>
+            <FigmaIcon />
+            Figma
+          </IconWrapper>
+          <IconWrapper>
+            <AffinityIcon />
+            Affinity
+          </IconWrapper>
         </IconsContainer>
       </AboutSection>
     </About>

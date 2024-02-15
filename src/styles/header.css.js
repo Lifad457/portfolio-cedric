@@ -26,6 +26,11 @@ export const Nav = styled.div`
         list-style: none;
         gap: 1.5rem;
     }
+    
+    a {
+        text-decoration: none;
+        color: var(--color-font);
+    }
 `
 export const Input = styled.input`
     display: none;

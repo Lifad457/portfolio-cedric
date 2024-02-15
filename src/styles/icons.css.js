@@ -31,49 +31,53 @@ export const LinkedIn = styled(SiLinkedin)`
 `
 
 // Skills
-const skill = css`
-    font-size: 7rem;
-    border-radius: 15%;
-    padding: .6rem;
-    background-color: var(--color-tertiary);
-`
 export const HTMLIcon = styled(FaHtml5)`
-    ${skill}
+    font-size: 7rem;
 `;
 export const CSSIcon = styled(FaCss3Alt)`
-    ${skill}
+    font-size: 7rem;
 `
 export const JavaScriptIcon = styled(SiJavascript)`
-    ${skill}
+    font-size: 7rem;
 `
 export const ReactIcon = styled(FaReact)`
-    ${skill}
+    font-size: 7rem;
 `
 export const CSharpIcon = styled(SiCsharp)`
-    ${skill}
+    font-size: 7rem;
 `
 export const NodeIcon = styled(FaNodeJs)`
-    ${skill}
+    font-size: 7rem;
 `
 export const FirebaseIcon = styled(SiFirebase)`
-    ${skill}
+    font-size: 7rem;
 `
 export const MySQLIcon = styled(SiMysql)`
-    ${skill}
+    font-size: 7rem;
 `
 export const MSSQLIcon = styled(SiMicrosoftsqlserver)`
-    ${skill}
+    font-size: 7rem;
 `
 export const FigmaIcon = styled(FaFigma)`
-    ${skill}
+    font-size: 7rem;
 `
 export const AffinityIcon = styled(SiAffinity)`
-    ${skill}
+    font-size: 7rem;
 `
 export const IconsContainer = styled.div`
     display: flex;
     gap: 2rem;
     margin: 3rem 0;
+`
+export const IconWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-medium);
+    border-radius: 15%;
+    background-color: var(--color-tertiary);
+    padding: .6rem;
 `
 
 // Contact

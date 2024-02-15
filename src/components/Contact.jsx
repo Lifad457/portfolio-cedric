@@ -3,7 +3,7 @@ import { Email, Phone } from "../styles/icons.css";
 
 export default function ContactComponent() {
   return (
-    <Contact>
+    <Contact id="contact">
         <h1>Contact</h1>
         <ContactSection>
           <Wrapper>
