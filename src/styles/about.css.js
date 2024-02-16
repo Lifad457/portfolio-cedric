@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const About = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 2rem 8rem;
+    padding: 6rem 8rem;
     background-color: var(--color-secondary);
 `
 export const AboutSection = styled.section`

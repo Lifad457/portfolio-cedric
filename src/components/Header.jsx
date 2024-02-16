@@ -1,9 +1,11 @@
-import { HashLink as Link } from 'react-router-hash-link';
 import { Header, Logo, Nav, Input, Label } from "../styles/header.css"
 import { Moon, Sun } from "../styles/icons.css";
+import ScrollToAnchor from './ScrollToAnchor';
+import { Link } from 'react-router-dom';
 
 export default function HeaderComponent({ theme, setTheme }) {
- 
+    ScrollToAnchor();
+
     return (
         <Header>
             <Logo>Bison Cédric</Logo>

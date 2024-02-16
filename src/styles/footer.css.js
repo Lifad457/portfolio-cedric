@@ -8,3 +8,12 @@ export const Footer = styled.div`
     background-color: var(--color-secondary);
     min-width: 100%;
 `
+export const Language = styled.section`
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+`
+export const Flag = styled.img`
+    width: 1.8rem;
+    height: 1.8rem;
+`
