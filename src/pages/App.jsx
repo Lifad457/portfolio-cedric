@@ -9,15 +9,15 @@ import ContactComponent from "../components/Contact";
 
 function App() {
   const[theme, setTheme] = useState("light");
-  const[language, setLanguage] = useState("en");
+  const[language, setLanguage] = useState("fr");
 
   return (
     <>
       <GlobalStyle theme={theme} />
-      <HeaderComponent theme={theme} setTheme={setTheme} />
+      <HeaderComponent language={language} theme={theme} setTheme={setTheme} />
       <HomeComponent language={language} />
       <AboutComponent language={language} />
-      <ProjectsComponent />
+      <ProjectsComponent language={language} />
       <ContactComponent />
       <FooterComponent setLanguage={setLanguage} />
     </>

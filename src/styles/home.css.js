@@ -45,5 +45,6 @@ export const HomeDescription = styled.div`
 export const HeroImage = styled.img`
     display: block;
     max-width: 450px;
+    min-width: 450px;
     box-shadow: 1rem 1rem 0 0 var(--color-tertiary);
 `

@@ -3,7 +3,7 @@ import { Moon, Sun } from "../styles/icons.css";
 import ScrollToAnchor from './ScrollToAnchor';
 import { Link } from 'react-router-dom';
 
-export default function HeaderComponent({ theme, setTheme }) {
+export default function HeaderComponent({ language, theme, setTheme }) {
     ScrollToAnchor();
 
     return (
@@ -11,9 +11,9 @@ export default function HeaderComponent({ theme, setTheme }) {
             <Logo>Bison Cédric</Logo>
             <Nav>
                 <ul>
-                    <li><Link to="#home">Home</Link></li>
-                    <li><Link to="#about">About</Link></li>
-                    <li><Link to="#projects">Projects</Link></li>
+                    <li><Link to="#home">{language === "fr" ? "Accueil" : "Home"}</Link></li>
+                    <li><Link to="#about">{language === "fr" ? "À propos" : "About"}</Link></li>
+                    <li><Link to="#projects">{language === "fr" ? "Projets" : "Projects"}</Link></li>
                     <li><Link to="#contact">Contact</Link></li>
                 </ul>
             </Nav>

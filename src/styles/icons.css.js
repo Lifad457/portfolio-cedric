@@ -13,7 +13,8 @@ export const Socials = styled.div`
 `
 export const GitHub = styled(SiGithub)`
     transition: transform .3s ease-out;
-    font-size: var(--fs-large);
+    font-size: var(--fs-extra-large);
+    color: var(--color-font);
 
     &:hover {
         cursor: pointer;
@@ -22,7 +23,8 @@ export const GitHub = styled(SiGithub)`
 `
 export const LinkedIn = styled(SiLinkedin)`
     transition: transform .3s ease-out;
-    font-size: var(--fs-large);
+    font-size: var(--fs-extra-large);
+    color: var(--color-font);
 
     &:hover {
         cursor: pointer;

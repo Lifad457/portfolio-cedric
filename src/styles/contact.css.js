@@ -35,6 +35,9 @@ export const ContactSection = styled.section`
     align-items: center;
     justify-content: space-around;
     padding-bottom: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 `
 export const Wrapper = styled.div`
     display: flex;

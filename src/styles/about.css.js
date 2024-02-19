@@ -3,18 +3,20 @@ import styled from "styled-components";
 export const About = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 6rem 8rem;
+    padding: 0 8rem;
     background-color: var(--color-secondary);
 `
 export const AboutSection = styled.section`
     display: block;
-    margin: 2em 0;
-
+    max-width: 1200px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    
     h1 {
         display: inline-block;
         position: relative;
         font-size: var(--fs-large);
-        margin-bottom: 2rem;
         z-index: 1;
 
         &:before {
@@ -33,9 +35,11 @@ export const AboutSection = styled.section`
     p {
         font-size: var(--fs-regular);
         font-weight: var(--fw-medium);
+        margin: 2rem 0;
     }
 
     h2 {
+        margin-top: 4rem;
         font-size: var(--fs-medium);
         font-weight: var(--fw-medium);
         text-decoration: underline;
