@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     *, *&:before, *&:after {
@@ -8,12 +8,18 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     &:root {
-        --color-primary: ${props => props.theme === "light" ? "#f8f8f8" : "#3a3a3a"};
-        --color-secondary: ${props => props.theme === "light" ? "#f0f0f0" : "#303030"};
-        --color-tertiary: ${props => props.theme === "light" ? "#fcf800" : "#fc2600"};
+        --color-primary: ${(props) =>
+			props.theme === 'light' ? '#f8f8f8' : '#3a3a3a'};
+        --color-secondary: ${(props) =>
+			props.theme === 'light' ? '#f0f0f0' : '#303030'};
+        --color-tertiary: ${(props) =>
+			props.theme === 'light' ? '#fcf800' : '#fc2600'};
         --color-black: #000;
         --color-white: #fff;
-        --color-font: ${props => props.theme === "light" ? "var(--color-black)" : "var(--color-white)"};
+        --color-font: ${(props) =>
+			props.theme === 'light'
+				? 'var(--color-black)'
+				: 'var(--color-white)'};
 
         --font-primary: 'Poppins', sans-serif;
         --fw-light: 300;
@@ -43,4 +49,4 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--color-font);
         background-color: var(--color-primary);
     }
-`
+`;
