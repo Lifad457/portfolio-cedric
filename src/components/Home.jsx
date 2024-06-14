@@ -15,11 +15,11 @@ export default function HomeComponent({ language }) {
 			return (
 				<>
 					<h1>Développeur</h1>
-					<h1>Front-End</h1>
+					<h1>Full-Stack</h1>
 					<h1>React</h1>
 					<h3>
-						Bonjour, moi c&apos;est Cédric, un développeur front-end
-						basé à Vert le Petit, Essonnes.
+						Bonjour, moi c&apos;est Cédric, un développeur
+						full-stack basé à Vert le Petit, Essonnes.
 						<br />
 						Je me spécialise dans la construction de sites web et
 						d&apos;applications à l&apos;aide de technologies
@@ -30,12 +30,12 @@ export default function HomeComponent({ language }) {
 		} else {
 			return (
 				<>
-					<h1>Front-End</h1>
+					<h1>Full-Stack</h1>
 					<h1>React</h1>
 					<h1>Developer</h1>
 					<h3>
-						Hi, I&apos;m Cédric, a front-end developer based in Vert
-						le Petit, Essonnes (France).
+						Hi, I&apos;m Cédric, a full-stack developer based in
+						Vert le Petit, Essonnes (France).
 						<br />I specialize in building websites and applications
 						using modern technologies like React.
 					</h3>

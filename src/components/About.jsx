@@ -3,6 +3,7 @@ import {
 	AffinityIcon,
 	CSSIcon,
 	CSharpIcon,
+	ExpressIcon,
 	FigmaIcon,
 	FirebaseIcon,
 	HTMLIcon,
@@ -10,6 +11,7 @@ import {
 	IconsContainer,
 	JavaScriptIcon,
 	MSSQLIcon,
+	MongoDBIcon,
 	MySQLIcon,
 	NodeIcon,
 	ReactIcon,
@@ -25,7 +27,7 @@ export default function AboutComponent({ language }) {
 						<h1>À propos</h1>
 						<p>
 							J’ai le plaisir de me présenter en tant que
-							développeur Front-End React. Suite à un changement
+							développeur Full-Stack React. Suite à un changement
 							de carrière, j’ai suivi une formation afin d’obtenir
 							un titre professionnel de niveau 5 en développement
 							de logiciels, marquant ainsi une étape importante
@@ -93,9 +95,9 @@ export default function AboutComponent({ language }) {
 					<AboutSection>
 						<h1>About me</h1>
 						<p>
-							I am pleased to introduce myself as a Front-End
+							I am pleased to introduce myself as a Full-Stack
 							React Developer. Following a career change, I
-							completed specialized training to attain a Level II
+							completed specialized training to attain a Level V
 							professional title in software development, marking
 							a significant milestone in my career transition.
 							With a passion for technology and a commitment to
@@ -187,6 +189,10 @@ export default function AboutComponent({ language }) {
 							Node.js
 						</IconWrapper>
 						<IconWrapper>
+							<ExpressIcon />
+							Express
+						</IconWrapper>
+						<IconWrapper>
 							<FirebaseIcon />
 							Firebase
 						</IconWrapper>
@@ -200,6 +206,10 @@ export default function AboutComponent({ language }) {
 						<IconWrapper>
 							<MSSQLIcon />
 							MSSQL
+						</IconWrapper>
+						<IconWrapper>
+							<MongoDBIcon />
+							Mongo DB
 						</IconWrapper>
 					</IconsContainer>
 					<h2>UI/UX Tools</h2>

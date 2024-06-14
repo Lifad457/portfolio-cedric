@@ -16,6 +16,8 @@ import {
 	SiMicrosoftsqlserver,
 	SiAffinity,
 	SiCsharp,
+	SiMongodb,
+	SiExpress,
 } from 'react-icons/si';
 
 // Socials
@@ -77,6 +79,12 @@ export const FigmaIcon = styled(FaFigma)`
 	font-size: 7rem;
 `;
 export const AffinityIcon = styled(SiAffinity)`
+	font-size: 7rem;
+`;
+export const MongoDBIcon = styled(SiMongodb)`
+	font-size: 7rem;
+`;
+export const ExpressIcon = styled(SiExpress)`
 	font-size: 7rem;
 `;
 export const IconsContainer = styled.div`
