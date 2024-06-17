@@ -6,6 +6,7 @@ import {
 } from '../styles/project.css';
 import PropTypes from 'prop-types';
 import dunderMifflin from '../assets/images/dunder-mifflin.png';
+import kanban from '../assets/images/kanban.png';
 
 export default function ProjectsComponent({ language }) {
 	return (
@@ -29,6 +30,19 @@ export default function ProjectsComponent({ language }) {
 							{language === 'fr'
 								? 'Site web de vente de papier.'
 								: 'Paper selling website.'}
+						</p>
+					</ProjectCard>
+					<ProjectCard
+						to='https://kanban-methode.netlify.app/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<ProjectImage src={kanban} alt='Kanban' />
+						<h2>Kanban</h2>
+						<p>
+							{language === 'fr'
+								? 'Méthode kanban.'
+								: 'Kanban method.'}
 						</p>
 					</ProjectCard>
 				</ProjectSection>
