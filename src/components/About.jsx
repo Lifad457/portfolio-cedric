@@ -68,7 +68,7 @@ export default function AboutComponent({ language }) {
 						<p>
 							Je suis maintenant à la recherche d’un nouveau défi
 							et d’une transition vers une carrière en tant que
-							développeur front-end React. Avec une passion
+							développeur Full-Stack React. Avec une passion
 							profondément enracinée pour la technologie et une
 							volonté incessante de croissance personnelle et
 							professionnelle, j’ai hâte de mettre à profit mes
@@ -76,7 +76,7 @@ export default function AboutComponent({ language }) {
 						</p>
 						<p>
 							Ma décision de poursuivre une carrière dans le
-							développement Front-End découle d’un désir de
+							développement Full-Stack découle d’un désir de
 							m’immerger dans le monde dynamique du développement
 							web, où la créativité et l’innovation se croisent.
 							La perspective de travailler avec React, une
@@ -131,14 +131,14 @@ export default function AboutComponent({ language }) {
 						</p>
 						<p>
 							I&rsquo;m now looking for a new challenge and
-							transitioning into a career as a front-end React
+							transitioning into a career as a Full-Stack React
 							developer. With a deep-rooted passion for technology
 							and a relentless drive for personal and professional
 							growth, I am eager to leverage my skills and embark
 							on this exhilarating journey.
 						</p>
 						<p>
-							My decision to pursue a career in Front-End
+							My decision to pursue a career in Full-Stack
 							development stems from a desire to immerse myself in
 							the dynamic world of web development, where
 							creativity and innovation intersect. The prospect of
